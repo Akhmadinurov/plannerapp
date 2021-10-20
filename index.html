@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <title>Planner app</title>
+    <script type="text/javascript">
+        var nav = document.querySelector('header')
+
+        window.onscroll = function () {
+
+            // pageYOffset or scrollY
+            if (window.pageYOffset > 0) {
+                document.querySelector('header').classList.add('scrolled');
+            } else {
+                document.querySelector('header').classList.remove('scrolled');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="main-wrapper">
+        <!-- navigation bar -->
+        <!-- TODO: 
+                mobile drop down menu 
+            -->
+        <header class="navbar">
+            <a href="#" class="navbar__logo">Plancy</a>
+
+            <div id="#menuToggle">
+                <div class="navbar__sandwich-menu" >
+                    <input class="navbar__fake-checkbox" type="checkbox"  />
+                </div> 
+
+                <nav class="navbar__menu">
+                    <a href="#" class="navbar__link">About</a>
+                    <a href="#" class="navbar__link">Pricing</a>
+                    <a href="#" class="navbar__link">Contact</a>
+                    <a href="#" class="navbar__link">Blog</a>
+                </nav>
+            </div>
+
+            <button href="#" class="navbar__download-button">Free download</button>
+        </header>
+        <!-- /navigation bar -->
+
+        <!-- intro block -->
+        <div class="intro">
+            <div class="intro__container">
+                <h1 class="intro__heading">The most beautiful <span class="intro__heading--gradient">planner</span> app
+                </h1>
+                <p class="intro__text">Plancy does a great job planning your day, week, and month. User experience was
+                    crafted to give you
+                    the
+                    most from using it on both iPhone and iPad.</p>
+                <form action="" method="post" id="contact-form" class="email-form">
+                    <input type="text" class="email-form__email" name="email" placeholder="Leave your email">
+                    <input type="submit" class="email-form__submit" value="Contact us">
+                </form>
+            </div>
+
+        </div>
+        <!-- /intro block -->
+
+        <!-- reviews block -->
+
+        <div class="reviews">
+
+            <h2 class="reviews__heading">Over 12 million people <br>rely on <span
+                    class="reviews__heading--colored-word">Plancy</span> app</h2>
+            <p class="reviews__review-text reviews__review-text1">We have a powerful iPhone calendar app on our hands
+                here – meetings, locations, notes, tasks…everything under one roof.</p>
+            <p class="reviews__review-text reviews__review-text2">When it comes to combining both tasks lists and
+                calendar events into one, the Plancy app currently does it best.</p>
+            <p class="reviews__review-text reviews__review-text3">Plancy gets close to being my ideal iPhone calendar
+                app for the current state of calendar and reminders clients.</p>
+
+        </div>
+
+        <!-- /reviews block -->
+
+        <!-- features block -->
+        <!-- TODO: cards slider js -->
+        <div class="features">
+            <h3 class="features__heading">Features you'll <span class="features__heading--colored-word">love</span></h3>
+            <div class="features__slider">
+                <div class="features__slider_arrow-left"><img src="/images/icon-left-arrow.png" alt="slide to left">
+                </div>
+                <div class="features__slider_content">
+                    <div class="features__slider_icon features__slider_icon-1" style="display: none;">Color code events
+                        and calendars</div>
+                    <div class="features__slider_element features__slider_icon-2">
+                        <img src="/images/icon-invite.png" alt="invite people">
+                        <p>Invite people<br> to your events</p>
+                    </div>
+                    <div class="features__slider_element features__slider_icon-3">
+                        <img src="/images/icon-video.png" alt="video calls">
+                        <p>Video calls<br> integration</p>
+                    </div>
+                    <div class="features__slider_element features__slider_icon-4">
+                        <img src="/images/icon-location.png" alt="use maps">
+                        <p>Use Apple Maps<br> or Google Maps</p>
+                    </div>
+                    <div class="features__slider_element features__slider_icon-5">
+                        <img src="/images/icon-hide.png" alt="hide calendars">
+                        <p>Hide calendars<br> you don't need</p>
+                    </div>
+                    <div class="features__slider_icon features__slider_icon-6" style="display: none;"></div>
+                </div>
+                <div class="features__slider_arrow-right"><img src="/images/icon-right-arrow.png" alt="slide to left">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
