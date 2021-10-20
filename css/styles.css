@@ -135,7 +135,7 @@ h2 {
     content: "";
     width: 26px;
     height: 28px;
-    background-image: url(/images/icon-plancy.png);
+    background-image: url(../images/icon-plancy.png);
 
 }
 
@@ -223,7 +223,7 @@ h2 {
     border: none;
     border-bottom: 1px solid #E5E5E5;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .email-form__submit {
@@ -248,7 +248,7 @@ h2 {
     grid-template-rows: repeat(3, 1fr);
     gap: 0px;
     padding-top: 40px;
-    background-image: url(/images/img-spiral.png), url(/images/star-2.png), url(/images/star-1.png), url(/images/star-3.png), url(/images/star-4.png);
+    background-image: url(../images/img-spiral.png), url(../images/star-2.png), url(../images/star-1.png), url(../images/star-3.png), url(../images/star-4.png);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 0 bottom, 240px 97%, 452px 55%, 733px 70%, 815px 88%;
 }
@@ -294,7 +294,7 @@ h2 {
     height: 50px;
     left: -10px;
     top: -10px;
-    background-image: url(/images/img-quotes.png);
+    background-image: url(../images/img-quotes.png);
     background-repeat: no-repeat;
     background-position: 0 0;
 
@@ -392,7 +392,7 @@ h2 {
 
     .navbar__sandwich-menu {
         display: block;
-        background: url(/images/Menu-light.png) no-repeat;
+        background: url(../images/Menu-light.png) no-repeat;
         width: 24px;
         height: 19px;
         position: absolute;
@@ -467,7 +467,7 @@ h2 {
         display: none;
     }
 
-    /* scrolled navbar modifications */
+    /*  navbar modifications on scroll */
 
     .scrolled .navbar__download-button {
         display: inline-flex;
@@ -485,9 +485,8 @@ h2 {
     }
 
     .scrolled .navbar__sandwich-menu {
-        background: url(/images/Menu.png) no-repeat;
+        background: url(../images/Menu.png) no-repeat;
     }
-
 
     /* mobile intro block */
 
@@ -503,10 +502,9 @@ h2 {
         grid-template-columns: 1fr;
         min-height: auto;
         padding-bottom: 70px;
-        background-image: url(/images/star-4.png), url(/images/star-1.png), url(/images/star-3.png);
+        background-image: url(../images/star-4.png), url(../images/star-1.png), url(../images/star-3.png);
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-position: 16px 60px, 316px 151px, 290px 350px;
-
     }
 
     .intro::after {
@@ -538,6 +536,10 @@ h2 {
 
     .email-form {
         grid-template-columns: 1fr;
+    }
+
+    .email-form__email{
+        margin-bottom: 40px;
     }
 
     /* mobile rewiev block */
