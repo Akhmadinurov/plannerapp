@@ -400,6 +400,10 @@ h2 {
 
 @media only screen and (max-width:600px) {
 
+    .navbar__menu {
+        display: none;
+    }
+
     .main-wrapper {
         background-image: none;
     }
@@ -452,10 +456,6 @@ h2 {
 
     /* show hide dropdown menu */
 
-    .navbar__menu {
-        display: none;
-    }
-
     #menuToggle input:checked .navbar__menu {
         display: flex;
     }
@@ -479,7 +479,6 @@ h2 {
     }
 
     .navbar__menu a:last-child {
-        border-color: #ffffff;
         padding-bottom: 14px;
     }
 

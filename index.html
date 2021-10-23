@@ -7,10 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Zen+Dots&display=swap" rel="stylesheet">
     <title>Planner app</title>
+    <style>
+        body {
+            /* background: #ccc;
+            color: #000; */
+        }
+        .slider-container {
+            width: 60vw;
+            margin: 0 auto;
+        }
+        .slider div {
+            text-align: center;
+        }
+        .slider div img{
+            display: inline-block;
+        }
+        .slider p{
+            font-size: 16px;
+            line-height: 22px;
+            opacity: 0.8;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            padding-top: 15px;
+        }
+    </style>
+
     <script type="text/javascript">
 
         var nav = document.querySelector('header')
@@ -43,9 +70,6 @@
     <!-- main container -->
     <div class="main-wrapper">
         <!-- navigation bar -->
-        <!-- TODO: 
-                mobile drop down menu 
-            -->
         <header class="navbar">
             <a href="#" class="navbar__logo">Plancy</a>
 
@@ -106,10 +130,36 @@
         <!-- TODO: cards slider js -->
         <div class="features">
             <h3 class="features__heading">Features you'll <span class="features__heading--colored-word">love</span></h3>
-            <div class="features__slider">
-                <div class="features__slider_arrow-left"><img src="images/icon-left-arrow.png" alt="slide to left">
+            <!-- <div class="features__slider"> -->
+                <!-- <div class="features__slider_arrow-left"><img src="images/icon-left-arrow.png" alt="slide to left">
+                </div> -->
+                <!-- slick slider  -->
+                <div class="slider-container">
+                    <div class="slider single-item">
+                        <div><img src="images/icon-color.png" alt="">
+                            <p>Color code events<br>and calendars</p>
+                        </div>
+                        <div><img src="images/icon-invite.png" alt="invite people">
+                            <p>Invite people<br> to your events</p>
+                        </div>
+                        <div> <img src="images/icon-video.png" alt="video calls">
+                            <p>Video calls<br> integration</p>
+                        </div>
+                        <div><img src="images/icon-location.png" alt="use maps">
+                            <p>Use Apple Maps<br> or Google Maps</p>
+                        </div>
+                        <div><img src="images/icon-hide.png" alt="hide calendars">
+                            <p>Hide calendars<br> you don't need</p>
+                        </div>
+                        <div><img src="images/icon-share.png" alt="Share calendars">
+                            <p>Share calendars<br>
+                                with others</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="features__slider_content">
+                <!-- /slick slider -->
+
+                <!-- <div class="features__slider_content">
                     <div class="features__slider_icon features__slider_icon-1" style="display: none;">Color code events
                         and calendars</div>
                     <div class="features__slider_element features__slider_icon-2">
@@ -129,13 +179,16 @@
                         <p>Hide calendars<br> you don't need</p>
                     </div>
                     <div class="features__slider_icon features__slider_icon-6" style="display: none;"></div>
-                </div>
-                <div class="features__slider_arrow-right"><img src="images/icon-right-arrow.png" alt="slide to left">
-                </div>
-            </div>
+                </div> -->
+                <!-- <div class="features__slider_arrow-right"><img src="images/icon-right-arrow.png" alt="slide to left">
+                </div> -->
+            <!-- </div> -->
         </div>
-
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
