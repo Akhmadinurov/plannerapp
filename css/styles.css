@@ -421,7 +421,7 @@
     /* Modal Content */
     .modal-content {
         position: relative;
-        background: #F4F4F4 url(/images/icon-check.png) no-repeat center 20px;
+        background: #F4F4F4 url(../images/icon-check.png) no-repeat center 20px;
         margin: auto;
         padding: 0;
         width: 400px;
