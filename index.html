@@ -15,11 +15,10 @@
     <title>Planner app</title>
 
     <script type="text/javascript">
-
+    // top nav change o scrool 
         var nav = document.querySelector('header')
         window.onscroll = function () {
 
-            // pageYOffset or scrollY
             if (window.pageYOffset > 0) {
                 document.querySelector('header').classList.add('scrolled');
             } else {
@@ -29,6 +28,7 @@
     </script>
 
     <script>
+    //mobile nav menu show/hide
         function toggle() {
             var cont = document.getElementById('cont');
             if (cont.style.display == 'flex') {
@@ -39,18 +39,18 @@
             }
         }
     </script>
-
 </head>
 
 <body>
-
+    <!-- hidden modal window -->
     <div class="modal-window"></div>
+
     <!-- main container -->
     <div class="main-wrapper">
+
         <!-- navigation bar -->
         <header class="navbar">
             <a href="#" class="navbar__logo">Plancy</a>
-
             <div id="#menuToggle">
 
                 <div class="navbar__sandwich-menu" onchange="toggle()">

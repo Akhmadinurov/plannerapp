@@ -48,12 +48,9 @@
 
     .navbar {
         min-height: 60px;
-        /* opacity: 95%; */
         color: #ffffff;
         display: flex;
-        /* justify-content: space-evenly; */
         justify-content: flex-end;
-        /* align-content: center; */
         align-items: center;
         background-color: transparent;
         position: fixed;
@@ -211,7 +208,7 @@
         height: 20px;
         background-color: #926CFF;
         display: inline-block;
-        z-index: 1000;
+        z-index: 1;
     }
 
     .email-form__email {
@@ -297,7 +294,6 @@
         background-image: url(../images/img-quotes.png);
         background-repeat: no-repeat;
         background-position: 0 0;
-
     }
 
     .reviews__review-text1 {
@@ -712,7 +708,9 @@
 
         .reviews__review-text {
             padding-bottom: 0;
-            max-width: 317px;
+            /* max-width: 282px;
+            padding-left: 10px;
+            padding-right: 10px; */
             text-align: center;
         }
 
@@ -741,4 +739,14 @@
           .modal-content {
               width: auto;
           }
+    }
+    @media only screen and (max-width:320px) {
+        .reviews__review-text::before {
+            left: 10px;
+        }
+        .reviews__review-text {
+            max-width: 282px;
+            padding-left: 10px;
+            padding-right: 10px;
+         }
     }
