@@ -1,5 +1,4 @@
     /* TODOS:
-    - correct styles on small mobile
      */
 
     /* defaults */
@@ -24,7 +23,7 @@
     }
 
     h2 {
-        font-family: Open Sans;
+        font-family: "Open Sans";
         font-weight: bold;
         font-size: 40px;
         line-height: 50px;
